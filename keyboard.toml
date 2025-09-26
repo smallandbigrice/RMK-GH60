@@ -11,6 +11,7 @@ manufacturer = "WXY"
 chip = "nrf52840"   # E73 模块
 
 [matrix]
+col2row = true
 input_pins = ["P0.28", "P0.29", "P0.30", "P0.31", "P1.00"]
 output_pins = [
   "P0.02","P0.03","P0.04","P0.05","P0.06","P0.07","P0.08",
@@ -20,7 +21,7 @@ output_pins = [
 [layout]
 rows = 5
 cols = 15
-layers = 2
+layers = 1
 
 # 矩阵映射 (ANSI 64)
 # 布局：标准 60% + 独立方向键
@@ -44,16 +45,6 @@ Tab Q W E R T Y U I O P LBracket RBracket BSlash
 CapsLock A S D F G H J K L SColon Quote Enter
 LShift Z X C V B N M Comma Dot Slash RShift Up
 LCtrl LGui LAlt          Space              RAlt Fn Left Down Right
-"""
-
-[[layer]]
-name = "fn"
-keys = """
-Grave F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 Del
-_     _  Up  _  _  _  _  _  _  _  _  _        _
-_    Left Down Right _  _  _  _  _  _  _      _
-_     _   _   _      _  _  _  _  _  _   _  PgUp
-_     _   _              _                  _ PgDn Home End
 """
 
 # -----------------------
